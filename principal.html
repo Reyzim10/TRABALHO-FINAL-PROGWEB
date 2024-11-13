@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de Análise e Desenvolvimento de Sistemas - IFMA</title>
+    <link rel="stylesheet" href="principal.css">
+</head>
+<body>
+    <header>
+        <h1>Curso de Análise e Desenvolvimento de Sistemas</h1>
+        <p>Instituto Federal de Educação, Ciência e Tecnologia do Maranhão - Campus Coelho Neto / IFMA</p>
+    </header>
+
+    <section class="about-ifma">
+        <h2>Sobre o IFMA - Campus Coelho Neto</h2>
+        <p>O Instituto Federal do Maranhão é referência em ensino tecnológico e de qualidade. O Campus Coelho Neto foi autorizado a funcionar em 23 de  abril de 2013. Segundo dados do IBGE, o município de Coelho Neto possui 46.750 habitantes, área de 975.549 m² e está localizado na região do Médio Parnaíba maranhense. Do ponto de vista econômico, a cidade de Coelho Neto concentra arranjos produtivos focados nos setores de agricultura e indústria de beneficiamento de cana-de-açúcar.</p>
+        <img src="Captura de tela 2024-09-18 103626_compressed.png" alt="Campus do IFMA">
+        <p>O IFMA Campus Coelho Neto está situado na zona urbana de Coelho Neto. Os cursos ofertados pelo Instituto foram desenvolvidos para contribuir com o desenvolvimento social e econômico da região. Atualmente, os cursos atendem alunos de Coelho Neto e de municípios vizinhos como Duque Bacelar-MA, Buriti de Inácia Vaz-MA e Miguel Alves-PI. Hoje são ofertados cursos técnicos em Administração, Informática e Automação Industrial, além dos cursos de graduação em Bacharel em Administração e o Tecnólogo em Análise de Desenvolvimento de Sistemas (ADS).</p>
+    </section>
+
+    <section class="about-course">
+        <h2>Sobre o Curso de Análise e Desenvolvimento de Sistemas</h2>
+        <p>O curso de Análise e Desenvolvimento de Sistemas tem como objetivo formar profissionais capacitados para o desenvolvimento de softwares, gestão de sistemas e soluções tecnológicas. Com disciplinas que abrangem desde lógica de programação até segurança da informação, os alunos saem preparados para o mercado de trabalho.  Ele abrange fundamentos da computação, como teoria dos algoritmos e programação em diversas linguagens, e inclui engenharia de software, que ensina metodologias para a criação e manutenção de sistemas. Também aborda banco de dados, desenvolvimento web e mobile, redes e segurança, e gestão de projetos. O curso oferece experiência prática através de trabalhos em grupo, estágios e projetos, preparando os alunos para resolver problemas complexos e inovar em tecnologia da informação. <h3>Observe logo abaixo um pequeno resumo das disciplinas do módulo II do Curso:</h3>
+        </p>
+        <div class="course-details">
+            <div class="discipline" onclick="showInfo('prog')">Programação II</div>
+            <div class="discipline" onclick="showInfo('web')">Programação Web I</div>
+            <div class="discipline" onclick="showInfo('so')">Sistemas Operacionais</div>
+            <div class="discipline" onclick="showInfo('alg')">Álgebra Linear</div>
+        </div>
+    </section>
+
+    <section id="course-info" class="hidden">
+        <h3 id="course-title"></h3>
+        <p id="course-description"></p>
+        <button onclick="hideInfo()">Fechar</button>
+    </section>
+
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+<div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+    </div>
+</div>
+<script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+</script>
+
+
+    <script src="principal.js"></script>
+</body>
+</html>
